@@ -1,0 +1,278 @@
+baseURL: "https://hugo-profile.netlify.app"
+languageCode: "en-us"
+title: "Yujie(Jessie) LYU"
+theme: hugo-profile
+
+outputs:
+  home:
+    - "HTML"
+    - "RSS"
+    - "JSON"
+  page:
+    - "HTML"
+    - "RSS"
+
+Paginate: 3
+enableRobotsTXT: true
+# disqusShortname: your-disqus-shortname
+# googleAnalytics: G-MEASUREMENT_ID
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+
+params:
+  title: "Yujie(Jessie) LYU"
+  description: Text about my cool site
+  # staticPath: ""  # The path to serve the static files from
+  favicon: "/fav.png"
+
+  # Whether to serve bootstrap css and js files from CDN or not. Can be set to true, "css" or "js" to choose between
+  # serving both, only the css, or only the js files through the CDN. Any other value will make so that CDN is not used.
+  # Note the lack of "" in true, it should be of boolean type.
+  useBootstrapCDN: false
+
+  # If you want to load dynamically responsive images from Cloudinary
+  # This requires your images to be uploaded + hosted on Cloudinary
+  # Uncomment and change YOUR_CLOUD_NAME to the Cloud Name in your Cloudinary console
+  # cloudinary_cloud_name: "YOUR_CLOUD_NAME"
+  
+  # Whether to add mathjax support on all pages. Alternatively, you can opt-in per page by adding `mathjax: true` in the frontmatter.
+  mathjax: false
+
+  # Whether the fade animations on the home page will be enabled
+  animate: true
+
+  theme:
+    # disableThemeToggle: true
+    defaultTheme: "light" # dark
+
+  font:
+    fontSize: 1rem # default: 1rem
+    fontWeight: 400 # default: 400
+    lineHeight: 1.5 # default: 1.5
+    textAlign: left # default: left
+
+  # color preference
+  # color:
+  #   textColor:
+  #   secondaryTextColor:
+  #   backgroundColor:
+  #   secondaryBackgroundColor:
+  #   primaryColor:
+  #   secondaryColor:
+
+  #   darkmode:
+  #     textColor:
+  #     secondaryTextColor:
+  #     backgroundColor:
+  #     secondaryBackgroundColor:
+  #     primaryColor:
+  #     secondaryColor:
+
+  # If you want to customize the menu, you can change it here
+  navbar:
+    align: ms-auto # Left: ms-auto | center: mx-auto | right: me-auto | Default: ms-auto
+    # brandLogo: "/logo.png" # Logo for the brand | default is the favicon variable
+    # showBrandLogo: false # Show brand logo in nav bar | default is true
+    brandName: "Jessie LYU" # Brand name for the brand | default is the title variable
+    disableSearch: false
+    # searchPlaceholder: "Search"
+    stickyNavBar:
+      enable : true
+      showOnScrollUp : true
+    menus:
+      disableAbout: false
+      disableExperience: false
+      disableEducation: false
+      disableProjects: false
+      disableAchievements: false
+      disableContact: false
+
+  # Hero
+  hero:
+    enable: true
+    intro: "Hi, my name is"
+    title: "Jessie."
+    subtitle: "I build things for the web"
+    content: "A passionate web app developer. I tend to make use of modern web technologies to build websites that looks great, feels fantastic, and functions correctly."
+    image: images/avatar1.JPG
+    bottomImage:
+      enable: true
+    # roundImage: true # Make hero image circular | default false
+    # button:
+    #   enable: true
+    #   name: "Resume"
+    #   url: "#"
+    #   download: true
+    #   newPage: false
+    socialLinks:
+      fontAwesomeIcons:
+        - icon: fab fa-github
+          url: https://github.com/YujieLyu
+        - icon: fab fa-linkedin
+          url: https://www.linkedin.com/in/yujie-jessie-lyu/
+      customIcons:
+        - icon: /fav.png
+          url: "https://example.com"
+
+  # About
+  about:
+    enable: true
+    title: "About Me"
+    image: /images/ieaward.jpg
+    content: |-
+      I'm a self-motivated full stack engineer, quick learner and thoughtful communicator. My current role encompasses microservices development with .NET, mobile app development with Xamarin, and web frontend development with React. 
+      
+      I wish to apply my passion, IT knowledge, innovative ideas, and problem-solving skills to create value for the industry and accelerate self-development.
+    skills:
+      enable: true
+      title: "Tech stack:"
+      items:
+        - ".NET"
+        - "Xamarin"
+        - "Azure"
+        - "React"
+        - "Android"
+        - "SQL & NoSQL"
+        - "C#"
+        - "Java"
+
+
+  # Experience
+  experience:
+    enable: true
+    # title: "Custom Name"
+    items:
+      - job: "Software Engineer"
+        company: "IE"
+        companyUrl: "https://www.ie.com.au/"
+        date: "Feb 2020 - present"
+        featuredLink:
+          enable: true
+          name: "View the project"
+          url: "https://example.com"
+        content: |
+          I am currently working as a full stack software developer at [IE.](https://www.ie.com.au/) in Melbourne, VIC.  
+          I am working for the Lexus Australia for their national website, lexus encore app.
+          
+          - Lead mobile app development for Lexus Encore App.
+          - Take ownership of developing and maintaining microservices.
+
+      - job: "Web Developer Intern"
+        company: "Startupbootcamp"
+        # companyUrl: "https://example.com"
+        date: "Mar 2019 – Jun 2019"
+        featuredLink:
+          enable: true
+          url: "https://example.com"
+        # info:
+        #   enable: true
+        #   content: I worked as a web developer intern for more than one year in Amazon.
+        content: |
+          I worked as a Worked as part of the software developing Agile team in creative full-stack development (based on PHP Laravel framework, WordPress, Tailwind CSS, Vue.js, RESTful web services) at Startupbootcamp. in in Melbourne, VIC. 
+
+  # Education
+  education:
+    enable: true
+    # title: "Custom Name"
+    index: false
+    items:
+      - title: "Master of Information Technology (with Distinction)"
+        school:
+          name: "The University of Melbourne"
+          url: "https://www.unimelb.edu.au/"
+        date: "2017 - 2019"
+        GPA: "3.2 out of 4.0"
+        content: |-
+          Main Subjects
+            - Software Modelling and Design, Database System & Information Modelling, Distributed Systems, Mobile Computing Systems Programming, Software Processes and Management, Social Computing, Algorithms and Complexity.
+
+  # Achievements
+  achievements:
+    enable: true
+    # title: "Custom Name"
+    items:
+      - title: Have the Courage to Make a Difference Award Winner
+        content: For my ability to chanllenge the status quo and genuinely enable the freedom to innovate.
+        url: https://example.com
+        image: /images/rocket.jpeg
+      - title: Master of Information Technology with Distinction
+        content: Developed a product using Artificial Intelligence.
+        image: /images/unimelb-logo.png
+
+  # projects
+  projects:
+    enable: true
+    # title: "Custom Name"
+    items:
+      - title: Lexus Encore App
+        content: A new digital product will ultimately help achieve Lexus’s vision of becoming a leader in making luxury personal.
+        image: /images/lexus-app.jpg
+        featured:
+          name: Learn More
+          link: https://www.lexus.com.au/owners/apps/lexus-app
+        badges:
+          - "Xamarin"
+          - ".NET"
+          - "Microservices"
+        links:
+          - icon: fab fa-google-play
+            url: https://play.google.com/store/apps/details?id=au.com.lexus.mylexus.app
+          - icon: fab fa-app-store
+            url: https://apps.apple.com/au/app/lexus/id1480479318
+          - icon: fab fa-chrome
+            url: https://account.lexus.com.au/signin 
+
+      - title: Focusing
+        content: Focusing is an Android application for self-control of smartphone application usage for my graduation computing project.
+        image: /images/focusing.png
+        featured:
+          name: Demo
+          link: https://github.com/YujieLyu/Focusing
+        badges:
+          - "Android"
+          - "Java"
+        links:
+          - icon: fab fa-github
+            url: https://github.com/YujieLyu/Focusing
+
+  #Contact
+  contact:
+    enable: true
+    # title: "Custom Name"
+    content: Please feel free to get in touch via [LinkedIn](https://www.linkedin.com/in/yujie-jessie-lyu)!
+    # email: jessie.yujie.lyu@gmail.com
+    # btnName: Mail me
+    # formspree:
+    #   enable: true # `contact.email` value will be ignored
+    #   formId: abcdefgh # Take it from your form's endpoint, like 'https://formspree.io/f/abcdefgh'
+    #   emailCaption: "Enter your email address"
+    #   messageCaption: "Enter your message here"
+
+  footer:
+    recentPosts:
+      path: "blogs"
+      count: 3
+      title: Recent Posts
+      enable: true
+      disableFeaturedImage: false
+    socialNetworks:
+      github: https://github.com/YujieLyu
+      linkedin: https://www.linkedin.com/in/yujie-jessie-lyu
+
+  terms:
+    read: "Read"
+    toc: "Table Of Contents"
+    copyright: "All rights reserved"
+    pageNotFound: "Page not found"
+    emailText: "Check out this site"
+
+  datesFormat:
+    article: "Jan 2, 2006"
+    articleList: "Jan 2, 2006"
+    articleRecent: "Jan 2, 2006"
+
+  #customScripts: -| # You can add custom scripts which will be added before </body> tag
+  #  <script type="text/javascript"><!-- any script here --></script>
