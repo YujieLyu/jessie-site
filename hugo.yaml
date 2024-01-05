@@ -26,7 +26,7 @@ params:
   title: "Yujie(Jessie) LYU"
   description: Text about my cool site
   # staticPath: ""  # The path to serve the static files from
-  favicon: "/fav.png"
+  favicon: "images/logo3.png"
 
   # Whether to serve bootstrap css and js files from CDN or not. Can be set to true, "css" or "js" to choose between
   # serving both, only the css, or only the js files through the CDN. Any other value will make so that CDN is not used.
@@ -78,7 +78,7 @@ params:
     # showBrandLogo: false # Show brand logo in nav bar | default is true
     brandName: "Jessie LYU" # Brand name for the brand | default is the title variable
     disableSearch: false
-    # searchPlaceholder: "Search"
+    searchPlaceholder: "Search"
     stickyNavBar:
       enable : true
       showOnScrollUp : true
@@ -95,12 +95,12 @@ params:
     enable: true
     intro: "Hi, my name is"
     title: "Jessie."
-    subtitle: "I build things for the web"
-    content: "A passionate web app developer. I tend to make use of modern web technologies to build websites that looks great, feels fantastic, and functions correctly."
-    image: images/avatar1.JPG
+    subtitle: "Crafting Digital Solutions Across Platforms."
+    content: "Full stack enthusiast specialising in microservices, mobile app, and web development. Passionate about crafting seamless digital experiences, blending modern tech for style and performance."
+    image: images/avatar.jpg
     bottomImage:
       enable: true
-    # roundImage: true # Make hero image circular | default false
+    roundImage: true # Make hero image circular | default false
     # button:
     #   enable: true
     #   name: "Resume"
@@ -114,14 +114,14 @@ params:
         - icon: fab fa-linkedin
           url: https://www.linkedin.com/in/yujie-jessie-lyu/
       customIcons:
-        - icon: /fav.png
+        - icon: images/logo3.png
           url: "https://example.com"
 
   # About
   about:
     enable: true
     title: "About Me"
-    image: /images/ieaward.jpg
+    image: images/ieaward.jpg
     content: |-
       I'm a self-motivated full stack engineer, quick learner and thoughtful communicator. My current role encompasses microservices development with .NET, mobile app development with Xamarin, and web frontend development with React. 
       
@@ -152,7 +152,7 @@ params:
         featuredLink:
           enable: true
           name: "View the project"
-          url: "https://example.com"
+          url: "https://www.lexus.com.au/owners/apps/lexus-app"
         content: |
           I am currently working as a full stack software developer at [IE.](https://www.ie.com.au/) in Melbourne, VIC.  
           I am working for the Lexus Australia for their national website, lexus encore app.
@@ -165,7 +165,7 @@ params:
         # companyUrl: "https://example.com"
         date: "Mar 2019 – Jun 2019"
         featuredLink:
-          enable: true
+          enable: false
           url: "https://example.com"
         # info:
         #   enable: true
@@ -184,8 +184,10 @@ params:
           name: "The University of Melbourne"
           url: "https://www.unimelb.edu.au/"
         date: "2017 - 2019"
-        GPA: "3.2 out of 4.0"
+        # GPA: "3.2 out of 4.0"
         content: |-
+          WAM: 80/100
+
           Main Subjects
             - Software Modelling and Design, Database System & Information Modelling, Distributed Systems, Mobile Computing Systems Programming, Software Processes and Management, Social Computing, Algorithms and Complexity.
 
@@ -197,10 +199,10 @@ params:
       - title: Have the Courage to Make a Difference Award Winner
         content: For my ability to chanllenge the status quo and genuinely enable the freedom to innovate.
         url: https://example.com
-        image: /images/rocket.jpeg
+        image: images/rocket.jpeg
       - title: Master of Information Technology with Distinction
         content: Developed a product using Artificial Intelligence.
-        image: /images/unimelb-logo.png
+        image: images/unimelb-logo.png
 
   # projects
   projects:
@@ -209,7 +211,7 @@ params:
     items:
       - title: Lexus Encore App
         content: A new digital product will ultimately help achieve Lexus’s vision of becoming a leader in making luxury personal.
-        image: /images/lexus-app.jpg
+        image: images/lexus-app.jpg
         featured:
           name: Learn More
           link: https://www.lexus.com.au/owners/apps/lexus-app
@@ -227,7 +229,7 @@ params:
 
       - title: Focusing
         content: Focusing is an Android application for self-control of smartphone application usage for my graduation computing project.
-        image: /images/focusing.png
+        image: images/focusing.png
         featured:
           name: Demo
           link: https://github.com/YujieLyu/Focusing
