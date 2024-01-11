@@ -198,10 +198,10 @@ params:
     items:
       - title: Have the Courage to Make a Difference Award Winner
         content: For my ability to chanllenge the status quo and genuinely enable the freedom to innovate.
-        url: https://example.com
+        # url: https://example.com
         image: images/rocket.jpeg
       - title: Master of Information Technology with Distinction
-        content: Developed a product using Artificial Intelligence.
+        content: For my exceptional academic performance and expertise in the field.
         image: images/unimelb-logo.png
 
   # projects
